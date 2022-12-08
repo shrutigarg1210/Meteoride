@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="faq.css">
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width,initial-scale=1.0">
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+              <script src="faq.js"></script>
+              <script>
+            $(document).ready(function(){
+                  $(".ans").hide();
+                $("#Q1").click(function(){
+                    $("#A1").slideToggle("slow");
+                });
+                    $("#Q2").click(function(){
+                    $("#A2").slideToggle("slow");
+                });
+                $("#Q3").click(function(){
+                    $("#A3").slideToggle("slow");
+                });
+                $("#Q4").click(function(){
+                    $("#A4").slideToggle("slow");
+                });
+                $("#Q5").click(function(){
+                    $("#A5").slideToggle("slow");
+                });
+                $("#Q6").click(function(){
+                    $("#A6").slideToggle("slow");
+                });
+                $("#Q7").click(function(){
+                    $("#A7").slideToggle("slow");
+                });
+                $("#Q8").click(function(){
+                    $("#A8").slideToggle("slow");
+                });
+});
+
+        </script>
+        <style>
+             #QA{
+                padding: 40px;
+            }
+            .FAQ_Content{
+                padding: 5px;
+                text-align: center;
+                background-color: rgb(172, 206, 216);
+               /* border: solid 1px #111110;*/
+                font-size: larger;
+                padding: 1em;
+                margin: 10px;
+                border-radius: 20px;
+            }
+            .ans{
+                padding: 5px;
+                text-align: center;
+                background-color: rgb(11, 12, 12);
+               /* border: solid 1px #111110;*/
+                font-size: larger;
+                padding: 1em;
+                color: wheat;
+                margin: 10px;
+                border-radius: 20px;
+            }
+            #Heading{
+                text-indent: 1em;
+                font-size: x-large;
+                text-decoration: underline;
+                text-decoration-color: rgba(51, 29, 29, 0.801);
+                text-shadow: #111110;
+                padding: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="head">
+            <div id="logo">
+                <div class="logotext">Mete</div><img src="pictures/Logo.png" id="logoimg"><div id="lefttxt" class="logotext">ride</div>
+            </div>
+            <div id="menu">
+                <ul id="menu-list" type="none">
+                    <li> <a href = "links/home - Shortcut.lnk"> Home</a> </li>
+                        <li> <a href = "links/about - Shortcut.lnk"> About</a> </li>
+                        <li> <a href = "links/Tariff - Shortcut.lnk">Tariff</a> </li>
+                        <li> <a href = "links/home - Shortcut.lnk">Contact</a> </li>
+                        <li> <a href = "links/FAQQ - Shortcut.lnk">FAQ</a></li>
+
+                </ul>
+            </div>
+        </section>
+        <div id="Heading">
+            <h1>FAQ's</h1>
+        </div>
+        <div id="QA">
+        <div id="Q1" class="FAQ_Content">
+            Where do Meteoride Operate ?
+        </div>
+           <div id="A1" class="ans" class="FAQ_Content">
+            Meteoride offer bike rentals all over in states listed on our home page.
+        </div>
+            <div id="Q2" class="FAQ_Content">
+                Is Delivery and Collection Included ?
+            </div>
+                <div id="A2" class="ans" class="FAQ_Content">
+                    Delivery and collection is generally included in our rental fees, when stated, but charges may vary based on quantity of bikes and delivery or collection location.
+                </div>
+                <div id="Q3" class="ans" class="FAQ_Content">
+                    How do I Rent a Bicycle ?
+                </div>
+                <div id="A3" class="ans" class="FAQ_Content">
+                    Simply give us your dates, bike preference and departure. - we'll handle the rest.
+                </div>
+                <div id="Q4" class="FAQ_Content">
+                    Can Meteoride collect bicycle from a different location to delivery ?
+                </div>
+                <div id="A4" class="ans" class="FAQ_Content">
+                    Absolutely! It's no problem to have a bicycle delivered in one location and collected from a different location.
+                  For example we could deliver bikes in Mumbai-Marine Drive and collect them from Mumbai-Carter Road.
+                </div>
+                <div id="Q5" class="FAQ_Content">
+                    Can bicycle also be bought if liked?
+                </div>
+                <div id="A5" class="ans" class="FAQ_Content">
+                    Yes, you can also buy a bicycle. We have brand new bicycle to be sold of same quality as in rentals.
+                </div>
+                <div id="Q6" class="FAQ_Content" >
+                    Do you offer Road Bicycle Hire ?
+                </div>
+                <div id="A6" class="ans" class="FAQ_Content">
+                    Yes, we offer Road Bicycle here.
+                </div>
+                <div id="Q7" class="FAQ_Content">Is there any penalty for late return?</div>
+                <div id="A7" class="ans" class="FAQ_Content">Yes,but if you are late by more than 30mins and for those we take extra charges.</div>
+                <div id="Q8" class="FAQ_Content">What is the cancellation policy? </div>
+            <div id="A8" class="ans" class="FAQ_Content">
+                The deposit will always be refunded back irrespective of the time.<br>
+If there is a cancellation, then the following policy will be applied<br>
+No show - 100% deduction and only security deposit will be refunded.<br>
+Between 0 - 6 hrs of the pick up time - 75% rental charges will be withheld and security deposit will be refunded.<br>
+Between 6-24 hrs of the pick up time: 50% rental charges will be withheld.<br>
+Between 24-72 hrs of the pick up time: 25% rental charges will be withheld.<br>
+72 hrs or more prior to the pick up time: 10% rental charges will be withheld.<br>
+If we cancel the booking from our side due to any booking issues, technical error, non-availability of the vehicle,<br>
+ we will return the entire rental amount and the deposit.</div>
+                </div>
+    </body>
+</html>

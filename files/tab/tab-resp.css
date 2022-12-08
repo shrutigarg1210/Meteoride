@@ -1,0 +1,50 @@
+@media only screen and (max-width: 1228px) {
+  #picture{
+    width:62%;
+  }
+  #left{
+    width:38%;
+  }
+  #left-back{
+    width:38%;
+  }
+
+  #menu{
+    width:28%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #picture{
+    width:55%;
+  }
+  #left{
+    width:45%;
+  }
+  #left-back{
+    width:100%;
+  }
+  #menu{
+    width:36%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #picture{
+    width:0%;
+  }
+  #left{
+    width:100%;
+  }
+  #left-back{
+    width:100%;
+  }
+  #menu{
+    width:68%;
+  }
+  #booking{
+  left:9%;
+  margin-right:20%;
+  }
+  #logo{
+    left:16%;
+  }
+}

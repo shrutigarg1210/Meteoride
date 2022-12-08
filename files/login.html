@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .logotext{
+                display: inline-block;
+                font-size: 3rem;
+                font-family:'Courier New', Courier, monospace;
+                font-weight: bold;
+                color:#fffb7d;
+            }
+            #lefttxt{
+                position:absolute;
+                left:135%;
+            }
+            #logo{
+                position:absolute;
+                top:27%;
+                left:40.5%;
+            }
+            #logoimg{
+                width:4.5rem;
+                position:absolute;
+                left:88.9%;
+            }
+            #login{
+                border: 2px solid burlywood;
+                padding: 5px;
+                height: 300px;
+                width: 300px;
+                position: fixed;
+                top: 47%;
+                left: 15%;
+                margin-top: -90px;
+                margin-left: -90px;
+                background-color: bisque;
+            }
+            .button{
+                background-color: #f4511e;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                width: 150px;
+                display: inline-block;
+                border-radius: 5px;
+                background-image: linear-gradient(red, yellow);
+            }
+            body{
+                background-image: url(login/bi.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100%;
+            }
+        </style>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="login/log.js"></script>
+    </head>
+    <body>
+
+        <div id="logo">
+            <div class="logotext">Mete</div><img src="login/Logo.png" id="logoimg"><div id="lefttxt" class="logotext">ride</div>
+        </div>
+        <div id="login">
+        <form action="">
+            <h1>Log-in</h1>
+            <label for="email"><b>Email or mobile phone number</b></label><br>
+            <input type="email" id="email" name="email" placeholder="abc@gmail.com" class="frm"><br>
+            <br><label for="password"><b>Password</b></label><br>
+            <input type="password" id="password" name="password" placeholder="123chit." class="frm"><br>
+            <br>
+            <div>
+                <button id="submit" class="button">Log-In</button></div><br>
+               <strong>By continuing, you agree to Meteoride's Conditions of Use and Privacy Notice.</strong> 
+            </div>
+        </form>
+    </body>
+</html>

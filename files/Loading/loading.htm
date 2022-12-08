@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+		body{
+		margin:0;
+		padding:0;
+		background-color:rgba(228,238,241,255);
+		}
+        #image {
+			width: 10vw;
+			height: 10vw;
+			position: absolute;
+			margin: -25px 0 0 -25px;
+		}
+        #image2{
+            width: 40px;
+            height:40px;
+			
+        }
+        .content{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin: -25px 0 0 -25px;
+		  font-size:2em;
+        }
+		#cont{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		position:absolute;
+		width:100%;
+		height:100%;
+		}
+		.myDiv1{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		width: 200px;
+		height: 200px;
+		}
+		@media only screen and (max-width: 600px){
+			#image{
+				width:30vw;
+				height:30vw;
+				}
+		}
+    </style>
+</head>
+
+<body>
+<div id="cont">
+    <div id="myDiv" class="myDiv1">
+        <img id="image" src="loading-icon-gif-.gif">
+    </div>
+    <div class="content myDiv1" id="my" style="display: none;">
+        Order Successfull
+        <img id="image2" src="tick-icon.jpg"> 
+    </div>
+</div>
+    <script type="text/javascript">
+
+         (function () { 
+             var myDiv = document.getElementById("myDiv") 
+             var my = document.getElementById("my"), 
+                 show = function () { 
+                     myDiv.style.display = "block"; 
+                     setTimeout(hidegif, 3000); // 3 seconds 
+                 }, 
+
+                 hidegif = function () { 
+                     myDiv.style.display = "none"; 
+                     my.style.display="block"; 
+                     setTimeout(hideorder, 2000); 
+                 }, 
+
+                 hideorder = ()=>{ 
+                     my.style.display = "none"; 
+                     location.replace("./../../home.html") 
+                 }; 
+
+             show(); 
+         })(); 
+
+    </script>
+</body>
+
+</html>

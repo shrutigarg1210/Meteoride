@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="tab1.css">
+        <link rel="stylesheet" href="tab-resp.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="location.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            body{
+                margin:0px;
+                padding:0px;
+            }
+            section{
+                margin:0px;
+                padding:0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="left-back" class="lef"></div>
+        <div id="left" class="lef">
+
+            <button id="menu-button"><i class="fa fa-bars"></i></button>
+            <a href="#">
+                <section id="logo">
+                    <a href="./../../home.html"><div class="logotext"> Mete</div><img src="pictures/Logo.png" id="logoimg"><div id="lefttxt" class="logotext">ride</div></a>
+
+
+                </section>
+            </a>
+            <section class="navigation navi">
+              <button class="nav-button next1">Next</button>
+              <button class="nav-button bottom pay-button"><a href="./../Loading/loading.htm">Pay</a></button>
+            </section>
+
+            <section id="booking">
+                <form>
+                    <table>
+                        <tr id="first">
+                            <td class="boxes box-edit left1">
+                                <label for="TimeTextField">PICK UP</label></td>
+
+                                <td class="boxes box-edit right1"><input class="TimeTextField" id="pass-pick" type="search" list="mylist">
+
+                            </td>
+                        </tr>
+                        <tr id="second">
+                            <td class="boxes box-edit left1">
+                                <label for="TimeTextField">DROP OFF</label>
+                            </td>
+                            <td class="boxes box-edit right1">
+                                <input class="TimeTextField" id="pass-drop" type="search" list="mylist">
+                            </td>
+                            <span id="Mumbai">
+                                <datalist id="mylist">
+                                    <option value="Chowpatty Beach, Marine Lines">
+                                    <option value="Nariman Point">
+                                    <option value="Gateway of India, Apollo Bandar, Colaba">
+                                    <option value="National Gallery of Modern Art, Mahatma Gandhi Road, Fort">
+                                    <option value="Tata Garden, Church Gate">
+                                    <option value="Chhatrapati Shivaji Maharaj Terminus, Fort">
+                                    <option value="Taraporevala Aquarium, Marine Drive">
+                                    <option value="Kabootar Khana, MS Ali Road">
+                                        <option value="">
+                                </datalist>
+                            </span>
+
+                        </tr>
+                        <tr></tr><tr></tr><tr></tr><br>
+
+
+
+
+                        <tr class="bottom b1">
+                            <td class="b-box box-edit left1">
+                                <i class="fa fa-bicycle" aria-hidden="true"></i>
+                            </td>
+                            <td class="b-box box-edit right1 radio" >
+                        
+                                <input type="radio" class="pass-radio" name="cycle" value="0">
+                            </td>
+                        
+                        </tr>
+                        <br>
+                        <tr class="bottom b2">
+                        
+                            <td class="b-box box-edit left1">
+                              <span>
+                                <i class="fa fa-bicycle" aria-hidden="true">&emsp;</i><i class="fa fa-cogs"></i>
+                              </span>
+                              <span style="position:absolute;float:left;">
+                                
+                              </span>
+                            </td>
+                        
+                        
+                            <td class="b-box box-edit right1 radio">
+                        
+                                <input type="radio" class="pass-radio" name="cycle" value="1">
+                            </td>
+                        </tr>
+                        
+                        <tr class="bottom b3">
+                            <td class="b-box box-edit left1">
+                                <i class="fa fa-bicycle" aria-hidden="true"></i>&emsp;<i class="fa fa-cogs"></i>&emsp;<i class="fa fa-battery-three-quarters"></i>
+                            </td>
+                            <td class="b-box box-edit right1 radio">
+                        
+                                <input type="radio" class="pass-radio" name="cycle" value="2">
+                            </td>
+                        </tr>
+
+
+
+
+
+                        <tr id="t1" class="bottom time1">
+                            <td class="boxes box-edit left1">
+                                <label for="pick-time">PICK UP TIME:</label>
+                            </td>
+                            <td class="boxes box-edit right1">
+                                <input type="time" id="pick-time" class="t-in" name="pick-time">
+                            </td>
+                        </tr>
+                        <br>
+                        <tr id="t2" class="bottom time1" >
+                            <td class="boxes box-edit left1">
+                                <label for="drop-time">DROP OFF TIME:</label>
+                            </td>
+                            <td class="boxes box-edit right1">
+                                <input type="time" id="drop-time" class="t-in" name="drop-time">
+                            </td>
+                        </tr>
+                        
+                        <tr></tr>
+                        <tr>
+                          <section class="navigation nav-tab">
+                            <button class="nav-button nav2">Next</button>
+                          </section>
+                        </tr>
+
+                </table>
+            </form>
+
+            </section>
+            <section class="payments p11 bottom" >
+                <div class="customer-info">
+                    <ul type="none">
+                        <li>
+                            Pick Up:&nbsp;<span class="forbol" id="pick-lo"></span>
+                        </li>
+                        <br>
+                        <li>
+                            Drop off:&nbsp;<span class="forbol" id="drop-lo"></span>
+                        </li>
+                        <br>
+                        <li>
+                            From:&nbsp;<span class="forbol" id="pick-t"></span>&nbsp;to&nbsp;  <span class="forbol" id="drop-t"></span>
+                            
+                        </li>
+                        <li>
+                            Type:&nbsp;<span class="forbol" id="choic"></span>&nbsp;<span class="forbol">Cycle</span>
+                        </li>
+                    </ul>       
+                </div>
+                <div id="price-and-pay">
+                    <div class="box-edit pay-left boxes">Price         : </div>
+                    <div class="box-edit pay-right boxes forbol">Rs. </div>
+                </div>
+                <div id="final-pay">
+                    <div id="fin-pay-head">
+                        <button class="pay-but upi" checked><span>UPI</span></button>
+                        <button class="pay-but cred"><span>CREDIT/DEBIT</span></button>
+                    </div>
+                    <div class="fin-pay-bottom bottom" id="cred-deb">
+                        <label for="cred-name">Enter your name:</label><br>
+                        <input type="text" id="cred-name" name="cred-name"><br><br>
+
+                        <label for="cred-num">Enter your Debit/Credit number:</label><br>
+                        <input type="text" id="cred-num" name="cred-num" minlength="16" maxlength="16"><br><br>
+
+                        <label for="cred-num">Enter your CVV:</label><br>
+                        <input type="text" id="cred-num" name="cred-num" min="100" maxlength="3">
+
+                    </div>
+                    <div class="fin-pay-bottom" id="upi">
+                        <label for="upi-pay">Enter your UPI ID:</label><br><br>
+                        <input type="text" id="upi-pay" name="upi-pay">
+                    </div>
+                </div>
+                
+                
+
+
+            </section>
+        </div>
+        <div id="menu">
+            <div id="menu-list">
+                <button id="exit-menu">x</button>
+                <ul style="list-style-type:none;">
+                    <li> <a class="menu-list-buttons" href = "./../../home.html"> Home</a> </li>
+                    <li> <a class="menu-list-buttons" href = "./../about.html"> About</a> </li>
+                    <li> <a class="menu-list-buttons" href = "./../Tariff.html">Tariff</a> </li>
+                    <li> <a class="menu-list-buttons" href = "./../FAQQ.html">FAQ</a> </li>
+                    <li> <a class="menu-list-buttons" href = "./../../home.html#contact">Contact</a> </li>
+
+                </ul>
+
+            </div>
+
+
+
+        </div>
+
+        <div id="picture">
+        </div>
+
+
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
